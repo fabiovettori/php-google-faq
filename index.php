@@ -40,26 +40,76 @@
         <link rel="stylesheet" href="public\style.css">
     </head>
     <body>
-
         <header>
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 left">
+                        <a href="#"><img src="https://download.logo.wine/logo/Google/Google-Logo.wine.png" alt="google logo"> </a>
+                        <a href="#">Privacy and Terms</a>
+                    </div>
+                    <div class="col-lg-6 right">
+                        <div class="menu">
+                            <div><span></span><span></span><span></span></div>
+                            <div><span></span><span></span><span></span></div>
+                            <div><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3vvVZ-pOGsyhaNEm9s-tm96lh7OGxJrpPQ&usqp=CAU" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="col-lg-12 list-unstyled">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Technologies</a></li>
+                        <li><a class="active" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
 
         <main>
-            <?php foreach ($faqs as $key => $faq) { ?>
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php foreach ($faqs as $faq) { ?>
 
-                <div class="faq">
-                    <h2 clss="question"> <?php echo $faq['question'] ?> </h2>
-                    <p clss="answer"> <?php echo $faq['answer']  ?> </p>
+                            <div class="faq">
+                                <h2 clss="question"> <?php echo $faq['question'] ?> </h2>
+                                <p clss="answer"> <?php echo $faq['answer']  ?> </p>
+                            </div>
+
+                            <?php
+                        } ?>
+                    </div>
                 </div>
-
-                <?php
-            } ?>
+            </div>
         </main>
 
         <footer>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled left">
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">About Google</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 rigth">
+                        <i class="fas fa-comment-alt"></i>
+                        <select name="languages">
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Francais">Francais</option>
+                            <option value="Italian">Italian</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </footer>
-
     </body>
 </html>

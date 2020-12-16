@@ -1,0 +1,41 @@
+footer {
+    background: $footer_primary_color;
+
+    ul {
+        @include flex(row, flex-start, center);
+        margin: 0;
+
+        li {
+            padding: 15px 0;
+
+            a {
+                font-size: 11px;
+                color: $footer_secondary_color;
+                padding: 0 20px;
+
+                &:first-of-type {
+                    padding-left: 0px;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: $footer_secondary_color;
+                }
+            }
+        }
+    }
+
+    .rigth {
+        @include flex(row, center, center);
+
+        .fa-comment-alt {
+            margin-right: 10px;
+        }
+
+        select {
+            font-size: 14px;
+            height: 22px;
+            width: 180px;
+        }
+    }
+}

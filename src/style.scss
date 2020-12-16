@@ -1,7 +1,14 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'partials/_variables.scss';
-@import 'partials/_mixin.scss';
-@import 'partials/_common.scss';
-@import 'partials/_header.scss';
-@import 'partials/_main.scss';
-@import 'partials/_footer.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+@import 'partials/_variables';
+@import 'partials/_mixin';
+@import 'partials/_common';
+@import 'partials/_header';
+@import 'partials/_main';
+@import 'partials/_footer';
+
+$fa-font-path: 'fonts/vendor/@fortawesome/fontawesome-free';
