@@ -1,4 +1,6 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+$fa-font-path: 'fontawesome';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
@@ -10,5 +12,3 @@
 @import 'partials/_header';
 @import 'partials/_main';
 @import 'partials/_footer';
-
-$fa-font-path: 'fonts/vendor/@fortawesome/fontawesome-free';

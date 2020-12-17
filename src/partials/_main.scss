@@ -15,5 +15,9 @@ main {
         letter-spacing: .2px;
         line-height: 24px;
         color: $para_font_color;
+
+        a:hover {
+            text-decoration: none;
+        }
     }
 }
